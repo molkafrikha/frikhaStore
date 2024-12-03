@@ -254,7 +254,7 @@ const quantityInput = document.getElementById('quantityInput');
     const formData = { name, phone, city, address, quantity, color, size ,totalPrice };
 
     try {
-        const response = await fetch('http://localhost:3000/send-email', {
+        const response = await fetch('https://frikha-storeback.vercel.app/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
